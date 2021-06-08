@@ -1,0 +1,379 @@
+.header-page {
+  background-image: url(../img/wholesale.png); }
+
+.main-page {
+  max-width: 1366px;
+  margin: auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .main-page .title-section {
+    text-align: center;
+    width: 50%; }
+    .main-page .title-section .title {
+      position: relative;
+      color: #262c35;
+      font-size: 3.2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 40px;
+      margin-top: 150px;
+      margin-bottom: 20px; }
+      .main-page .title-section .title::before {
+        content: "";
+        width: 50px;
+        height: 3px;
+        background-color: #728571;
+        position: absolute;
+        top: -2px;
+        left: 50%;
+        transform: translateX(-50%); }
+    .main-page .title-section .title-desc {
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 21px;
+      color: #989da7; }
+  .main-page .main-section .product-section {
+    display: flex;
+    margin: 150px 0; }
+    .main-page .main-section .product-section .img-product {
+      width: 50%;
+      margin-right: 10rem; }
+    .main-page .main-section .product-section .product-description {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%; }
+      .main-page .main-section .product-section .product-description .product-name {
+        font-size: 3.2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 40px;
+        color: #262c35;
+        position: relative;
+        margin-bottom: 5rem; }
+        .main-page .main-section .product-section .product-description .product-name::before {
+          content: "";
+          height: 3px;
+          width: 70px;
+          background-color: #728571;
+          position: absolute;
+          top: -2px; }
+      .main-page .main-section .product-section .product-description .description-text {
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 21px;
+        color: #989da7; }
+      .main-page .main-section .product-section .product-description .read-more-btn {
+        width: 150px;
+        background-color: #728571;
+        border: none;
+        padding: 1.2rem 3.2rem;
+        color: white;
+        font-size: 1.4rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: 21px; }
+        .main-page .main-section .product-section .product-description .read-more-btn:hover {
+          background-color: #262c35;
+          color: white; }
+    .main-page .main-section .product-section:nth-child(even) .img-product {
+      margin-left: 10rem;
+      margin-right: 0; }
+  .main-page .inquiry-form {
+    margin-bottom: 15rem;
+    max-width: 766px;
+    margin: auto; }
+    .main-page .inquiry-form .inquiry-title {
+      text-align: center;
+      margin-bottom: 8rem; }
+      .main-page .inquiry-form .inquiry-title h2 {
+        font-size: 3.2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 40px; }
+      .main-page .inquiry-form .inquiry-title p {
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 21px;
+        color: #989da7;
+        text-align: center;
+        width: 60%;
+        margin: auto;
+        margin-top: 2rem; }
+    .main-page .inquiry-form .form {
+      width: 100%; }
+      .main-page .inquiry-form .form input,
+      .main-page .inquiry-form .form textarea {
+        border: 1px solid #f0f0f0;
+        padding: 1.5rem 2.5rem; }
+      .main-page .inquiry-form .form input {
+        height: 5.5rem; }
+      .main-page .inquiry-form .form .input {
+        display: flex;
+        margin-bottom: 3rem;
+        justify-content: space-between; }
+        .main-page .inquiry-form .form .input .iti {
+          width: 50%;
+          margin-right: 2rem; }
+          .main-page .inquiry-form .form .input .iti input {
+            width: 100%;
+            padding-left: 100px !important; }
+          .main-page .inquiry-form .form .input .iti .iti__flag-container {
+            margin-left: 2rem; }
+        .main-page .inquiry-form .form .input input {
+          width: 50%; }
+          .main-page .inquiry-form .form .input input:first-child {
+            margin-right: 2rem; }
+        .main-page .inquiry-form .form .input .business-type {
+          margin-right: 2rem;
+          position: relative;
+          height: 5.5rem;
+          width: 50%;
+          border: 1px solid #f0f0f0; }
+          .main-page .inquiry-form .form .input .business-type input {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            padding: 0 3rem;
+            font-size: 1.4rem;
+            font-weight: 400;
+            line-height: 21px;
+            border: none; }
+          .main-page .inquiry-form .form .input .business-type img {
+            position: absolute;
+            right: 3rem;
+            top: 50%;
+            transform: translateY(-50%); }
+          .main-page .inquiry-form .form .input .business-type .list-container {
+            position: absolute;
+            top: 100%;
+            max-height: 200px;
+            overflow: auto;
+            width: 100%;
+            background-color: white;
+            display: none;
+            z-index: 2;
+            box-shadow: 5px 5px 10px -12px #262c35; }
+            .main-page .inquiry-form .form .input .business-type .list-container.active {
+              display: block; }
+            .main-page .inquiry-form .form .input .business-type .list-container ul li {
+              padding: 0 1.5rem;
+              list-style: none;
+              cursor: pointer;
+              width: 100%;
+              height: 3rem;
+              display: flex;
+              align-items: center;
+              font-size: 1.4rem;
+              font-weight: 400;
+              line-height: 21px; }
+              .main-page .inquiry-form .form .input .business-type .list-container ul li:hover {
+                background-color: #728571;
+                color: white; }
+      .main-page .inquiry-form .form textarea {
+        width: 100%;
+        max-height: 15rem; }
+      .main-page .inquiry-form .form .years-input {
+        margin: 4rem 0; }
+        .main-page .inquiry-form .form .years-input h4 {
+          font-size: 1.8rem;
+          font-weight: 500;
+          line-height: 27px;
+          margin-bottom: 2.5rem; }
+        .main-page .inquiry-form .form .years-input .radios {
+          display: flex;
+          flex-wrap: wrap;
+          /* Hide the real input */
+          /* the container for the circle of radio button */
+          /* create main circle in the middle of radio button */
+          /* condition when the radio is checked */
+          /* condition when the radio is dsisabled (change the color and opacity) */
+          /* condition when the radio is dsisabled (change the border and opacity) */ }
+          .main-page .inquiry-form .form .years-input .radios .radio-container {
+            position: relative;
+            padding-left: 3.5rem;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            margin: 0.5rem 0;
+            margin-right: 3rem;
+            font-size: 1.4rem;
+            font-weight: 400;
+            line-height: 21px; }
+          .main-page .inquiry-form .form .years-input .radios .radio-container input {
+            opacity: 0; }
+          .main-page .inquiry-form .form .years-input .radios .radio-container .fake-radio {
+            position: absolute;
+            left: 0;
+            top: -1px;
+            height: 100%;
+            width: 20px;
+            border: 1px solid #728571;
+            border-radius: 50%; }
+          .main-page .inquiry-form .form .years-input .radios .radio-container .fake-radio::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            height: 0px;
+            width: 0px;
+            background-color: #728571;
+            border-radius: 50%;
+            transition: all 150ms ease; }
+          .main-page .inquiry-form .form .years-input .radios .radio-container input:checked ~ .fake-radio::before {
+            height: 70%;
+            width: 70%; }
+          .main-page .inquiry-form .form .years-input .radios .radio-container input:disabled ~ .fake-radio::before {
+            background-color: grey;
+            opacity: 0.7; }
+          .main-page .inquiry-form .form .years-input .radios .radio-container input:disabled ~ .fake-radio {
+            border: 1px solid grey;
+            opacity: 0.7; }
+      .main-page .inquiry-form .form .btn {
+        text-align: center;
+        margin-bottom: 15rem; }
+      .main-page .inquiry-form .form .btn-2 {
+        background-color: #728571;
+        border: none;
+        color: white;
+        padding: 1.5rem 0;
+        width: 350px;
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 400;
+        margin-top: 5rem;
+        border-radius: 2px; }
+        .main-page .inquiry-form .form .btn-2:hover {
+          background-color: #262c35; }
+
+@media only screen and (min-width: 900px) {
+  .product-section:nth-child(even) .product-description {
+    order: 1; }
+  .product-section:nth-child(even) .img-product {
+    order: 2;
+    margin-right: 2rem !important; } }
+
+@media only screen and (max-width: 900px) {
+  .header-page .main-text .main-title::before {
+    background-color: #728571; }
+  .main-page .title-section {
+    width: 100%;
+    margin: 0; }
+    .main-page .title-section .title {
+      font-size: 2.3rem !important;
+      font-weight: 700 !important;
+      line-height: 28.75px !important;
+      margin-top: 50px; }
+    .main-page .title-section .title-desc {
+      font-size: 1.2rem !important;
+      font-weight: 400 !important;
+      line-height: 18px !important;
+      width: 100%; }
+  .main-page .main-section {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .main-page .main-section .product-section {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      max-width: 500px;
+      width: 100%;
+      margin: 0rem 0; }
+      .main-page .main-section .product-section .img-product {
+        max-width: 500px;
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 3rem;
+        margin-left: 0;
+        margin-right: 0; }
+      .main-page .main-section .product-section .product-description {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 3rem;
+        margin-right: 0;
+        margin-left: 0;
+        text-align: left; }
+        .main-page .main-section .product-section .product-description .product-name {
+          text-align: left;
+          margin-bottom: 0;
+          font-size: 2.3rem !important;
+          font-weight: 700 !important;
+          line-height: 28.75px !important; }
+          .main-page .main-section .product-section .product-description .product-name::before {
+            content: "";
+            height: 3px;
+            width: 70px;
+            background-color: #728571;
+            position: absolute;
+            top: -2px;
+            left: 0%; }
+      .main-page .main-section .product-section .product-info {
+        justify-content: center;
+        margin-top: 3rem; }
+      .main-page .main-section .product-section .description-text {
+        text-align: left;
+        margin-bottom: 1rem;
+        font-size: 1.2rem !important;
+        font-weight: 400 !important;
+        line-height: 18px !important;
+        margin: 3rem 0; }
+      .main-page .main-section .product-section:nth-child(even) .product-description {
+        order: 2;
+        margin-right: 0rem !important; }
+      .main-page .main-section .product-section:nth-child(even) .img-product {
+        order: 1;
+        margin-right: 0;
+        margin-left: 0; }
+  .main-page .subscribe-footer-section {
+    margin-bottom: 5rem !important; } }
+
+@media only screen and (max-width: 650px) {
+  .header-page .main-text h1 {
+    font-size: 2.3rem !important;
+    font-weight: 700 !important;
+    line-height: 28.75px !important; }
+  .header-page .main-text .description {
+    width: 60%; }
+  .main-page .main-section {
+    margin-top: 2rem; }
+    .main-page .main-section .inquiry-form .inquiry-title {
+      margin-bottom: 4rem; }
+      .main-page .main-section .inquiry-form .inquiry-title h2 {
+        font-size: 2.3rem !important;
+        font-weight: 700 !important;
+        line-height: 28.75px !important; }
+      .main-page .main-section .inquiry-form .inquiry-title p {
+        width: 100%; }
+    .main-page .main-section .inquiry-form .form .input {
+      flex-direction: column;
+      margin-bottom: 0; }
+      .main-page .main-section .inquiry-form .form .input input {
+        margin-bottom: 1.5rem;
+        width: 100%; }
+      .main-page .main-section .inquiry-form .form .input .iti {
+        width: 100%;
+        margin-bottom: 1.5rem; }
+    .main-page .main-section .inquiry-form .form .business-type {
+      margin-right: 0;
+      margin-bottom: 1.5rem;
+      width: 100%; }
+    .main-page .main-section .inquiry-form .form .radios .radio-container {
+      font-size: 1.2rem !important;
+      font-weight: 400 !important;
+      line-height: 18px !important;
+      margin-right: 1rem; }
+    .main-page .main-section .inquiry-form .form .btn {
+      margin-bottom: 9rem; }
+      .main-page .main-section .inquiry-form .form .btn .btn-2 {
+        width: 100%;
+        background-color: #262c35; } }

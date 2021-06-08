@@ -1,0 +1,4 @@
+[2021-05-23 21:12:24] BigCommerce.INFO: Starting import [] []
+[2021-05-23 21:12:25] BigCommerce.INFO: Running import task {"state":"started","description":"Fetching store information"} []
+[2021-05-23 21:12:25] BigCommerce.DEBUG: Requesting store settings [] []
+[2021-05-23 21:12:25] BigCommerce.DEBUG: Retrieved store settings {"settings":{"bigcommerce_domain":"bushba.mybigcommerce.com","bigcommerce_currency_code":"USD","bigcommerce_currency_symbol":"$","bigcommerce_currency_symbol_position":"left","bigcommerce_decimal_units":2,"bigcommerce_integer_units":3,"bigcommerce_mass_unit":"oz","bigcommerce_length_unit":"in","bigcommerce_wishlists_enabled":1,"bigcommerce_facebook_pixel_id":"","bigcommerce_google_analytics_id":""}} []

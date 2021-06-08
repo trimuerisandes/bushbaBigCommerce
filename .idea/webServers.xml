@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="4f2580c3-3561-46bd-9986-88b89f45d549" name="bushba">
+        <fileTransfer rootFolder="/var/www/html" accessType="SFTP" host="34.69.24.90" port="22" sshConfigId="74246a2c-e33b-4b5f-b66c-7fa8c2f120e6" sshConfig="bushba" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
